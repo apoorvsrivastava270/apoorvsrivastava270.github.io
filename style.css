@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+#navbar{
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    transition: top 0.3s;
+    z-index: 2;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lefthead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navelem{
+    padding-right: 2rem;
+    transition-duration: 1s;
+    text-align: center;
+}
+.navelem:hover{
+    border-bottom: 3px solid red;
+    font-weight:bolder;
+
+}
+#Contactss{
+    padding-right: 0;
+}
+.mid{
+    height: 60px;
+    width: 294px;
+    background: url("/media/Logo_white.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition-duration: 5s;
+}
+.mid:hover{
+    background: url(/media/Logo_alt_white.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mid img{
+    width: 100%;
+}
+
+#top_login{
+    margin-right: 5px;
+    border: none;
+    border-radius: 2px;
+    color: black;
+    background-color: white;
+    font-size:x-small;
+    font-weight:bold;
+    transition-duration: 0.4s;
+    padding: 2px 10px;
+}
+#top_login:hover{
+    margin-top:-20px;
+}
+
+
+
+/* Content */
+#content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main_content{
+    position: absolute;
+    top: 1%;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 90%;
+}
+
+.students{
+    color: red;
+    text-shadow: 1px;
+}
+
+.frontrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+.mainimg{
+    width: 100%;
+}
+.mainimg img{
+    width: 30%;
+}
+
+.text_content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    font-size: 1vw;
+}
+
+#mainh{
+    font-size: 5vw;
+}
+
+#bigbutt{
+    margin-top: 20px;
+    padding: 20px 5px;
+    width: 30%;
+    border: none;
+    border-radius: 2px;
+    color: black;
+    background-color: white;
+    font-size: smaller;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+#bigbutt:hover{
+    margin-top: 10px;
+}
+
+#videosection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#videoo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bgvid{
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 0;
+}
+
+
+
+/* Footer */
+#footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footertail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footertile{
+    padding: 20px;
+}
