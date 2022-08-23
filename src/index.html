@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container cursor-default flex-col items-center justify-center max-w-max bg-gray-900 text-slate-50 font-Lato font-normal">
+    <div class="navbar flex justify-between items-center w-full font-Cinzel font-semibold">
+        <div class="left cursor-pointer px-4 py-2 text-5xl hover:scale-105 duration-150">
+            <a href="/src/index.html">A</a>
+        </div>
+        <div id="borgir" class="borgir lg:hidden px-4 cursor-pointer duration-500">
+            <img src="/media/burger.png" alt="burger" class="burg h-10" onclick="burger()">
+        </div>
+        <div class="right hidden lg:block">
+            <ul class="rl flex">
+                <li class="hi cursor-pointer px-4 py-2 hover:scale-105 duration-150 drop-shadow-md shadow-white"><a href="#about">About</a></li>
+                <li class="hi cursor-pointer px-4 py-2 hover:scale-105 duration-150"><a href="#skills">Skills</a></li>
+                <li class="hi cursor-pointer px-4 py-2 hover:scale-105 duration-150"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="burgermenu" class="burgermenu flex w-full justify-center items-center flex-col bg-zinc-900 hidden lg:hidden">
+        <div class="elem py-4 text-xl font-Cinzel hover:scale-105 duration-150"><a href="#about">About</a></div>
+        <div class="elem py-4 text-xl font-Cinzel hover:scale-105 duration-150"><a href="#skills">Skills</a></div>
+        <div class="elem py-4 text-xl font-Cinzel hover:scale-105 duration-150"><a href="#contact">Contact</a></div>
+    </div>
+
+
+    <div class="content flex-col justify-start items-center">
+        <div id="top" class="section1 flex flex-col justify-center items-center py-8 font-Lato xl:flex-row">
+            <div class="leftimg flex justify-center items-center w-4/5 xl:w-1/2">
+                <img src="/media/apoorv.jpeg" alt="Apoorv" class="img rounded-full border-cyan-200 border-8">
+            </div>
+            <div class="rightcontent px-2 text-6xl h-full w-2/3 cursor-default text-center xl:text-left" onmouseover="colourchanger('yo')" onmouseout="backtonormal('yo')">
+                <span class="yo duration-500 text-cyan-200">Hi!</span><br>My name is <span class="yo duration-500 text-cyan-200">Apoorv Srivastava.</span><br>I am a <span class="yo duration-500 text-cyan-200">Web Developer</span> and enjoy <span class="yo duration-500 text-cyan-200">Pizza.</span>
+            </div>
+        </div>
+        
+        <div id="about" class="section2 w-full flex flex-col justify-center items-center py-8 bg-slate-50 text-gray-900 2xl:flex 2xl:flex-row 2xl:justify-start 2xl:items-center">
+            <div class="rightcontent 2xl:w-2/3 w-full flex-col justify-center items-center text-2xl p-1" onmouseover="india(),colourchanger('bpgc')" onmouseout="foreign(),backtonormal('bpgc')">
+                <div class="font-Cinzel text-6xl font-semibold py-4">About Me</div>
+                <div class="py-4 font-light">
+                    I am from <span id="saf" class="duration-500">I</span><span id="white" class="duration-500">n</span><span id="blue" class="duration-500">d</span><span id="whit2" class="duration-500">i</span><span id="green" class="duration-500">a</span> and I love to code. I am currently learning <span class="bpgc duration-300">Web Development</span> and am in love with this domain. Coding along with designing is something I love the most about it. I am pursuing <span class="bpgc duration-300">Bachelors in Electronics and Electrical Engineering</span> from <a href="https://www.bits-pilani.ac.in/Goa/index.aspx" target="_blank" class="bpgc hover:text-cyan-200 duration-300">BITS Pilani, K.K. Birla Goa Campus.</a> Other than that, music is my favourite hobby. Looking forward to getting in contact with you!
+                </div>
+            </div>
+            <div class="leftcontent flex-col justify-center items-center w-full 2xl:w-1/3">
+                <div class="topimg flex justify-center items-center">
+                    <img src="/media/apoorv2.jpeg" alt="apoorv" class="h-96 rounded-full border-8 border-gray-900">
+                </div>
+                <div class="bottomimg flex justify-between px-8 flex-shrink-0 items-center py-4">
+                    <a href="https://www.instagram.com/apoorvyt/" target="_blank"><img src="/media/instagram.png" alt="instagram" class="h-10 hover:scale-125 duration-500"></a>
+                    <a href="https://www.linkedin.com/in/apoorv-srivastava-a6a905223/" target="_blank"><img src="/media/linkedin.png" alt="linkedin" class="h-10 hover:scale-125 duration-500"></a>
+                    <a href="https://www.youtube.com/channel/UCoNDWezeKyrK-1W_l_m4YJA" target="_blank"><img src="/media/youtube.png" alt="youtube" class="h-10 hover:scale-125 duration-500"></a>
+                    <a href="https://github.com/apoorvsrivastava270" target="_blank"><img src="/media/github.png" alt="github" class="h-10 hover:scale-125 duration-500"></a>
+                </div>
+            </div>      
+        </div>
+        <div id="skills" class="section3 py-3 w-full px-1" onmouseover="colourchanger('yo2')" onmouseout="backtonormal('yo2')">
+            <div class="font-Cinzel text-6xl font-semibold py-4 yo2 duration-500 text-center 2xl:text-left">
+                Skills
+            </div>
+            <div class="sec3content flex flex-col justify-center items-center 2xl:flex-row 2xl:items-start">
+                <div class="topleft w-full text-center 2xl:w-1/2 2xl:text-left">
+                    <div class="font-Cinzel font-semibold py-5 text-xl" onmouseover="colourchanger('yo4')" onmouseout="backtonormal('yo4')">
+                        My Education:
+                    </div>
+                    <div class="acads" onmouseover="colourchanger('yo4')" onmouseout="backtonormal('yo4')">
+                        Schooling (Grade 1 to 12) : <span class="yo4 duration-500"><a href="https://nvnjamnagar.edu.in/" target="_blank">Nand Vidya Niketan, Jamnagar</a></span><br>
+                        College (Bachelor's Degree) : <span class="yo4 duration-500"><a href="https://www.bits-pilani.ac.in/Goa/index.aspx" target="_blank">BITS Pilani, K.K. Birla Goa Campus</a></span><br>
+                        Web-Development : <span class="yo4 duration-500"><a href="https://www.codewithharry.com/" target="_blank">CodewithHarry</a>, <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a>, <a href="https://www.w3schools.com/" target="_blank">w3schools</a></span>
+                    </div>
+                    <div class="font-Cinzel font-semibold py-5 text-xl" onmouseover="colourchanger('yo3')" onmouseout="backtonormal('yo3')">
+                        My Academics:
+                    </div>
+                    <div class="acads" onmouseover="colourchanger('yo3')" onmouseout="backtonormal('yo3')">
+                        1. AISSE (Grade 10): <span class="yo3 duration-500">96.5%</span><br>
+                        2. AISSCE (Grade 12): <span class="yo3 duration-500">92.8%</span><br>
+                        3. BITSAT: <span class="yo3 duration-500">288 Marks</span><br>
+                    </div>
+                    <div class="font-Cinzel font-semibold py-5 text-xl" onmouseover="colourchanger('yo5')" onmouseout="backtonormal('yo5')">
+                        Languages Known:
+                    </div>
+                    <div class="acads yo5 duration-500" onmouseover="colourchanger('yo5')" onmouseout="backtonormal('yo5')">
+                        HTML<br>
+                        CSS<br>
+                        JavaScript<br>
+                        C<br>
+                        Java<br>
+                        Python<br>
+                        MySQL<br>
+                    </div>
+                </div>
+                <div class="topright flex flex-col justify-center items-center w-full 2xl:w-1/2">
+                    <div class="font-Cinzel font-semibold py-5 text-xl">My Projects:</div>
+                    <div class="pics flex justify-center items-center">
+                        <div class="toprow flex flex-col justify-center items-center">
+                            <div class="elem w-2/3 py-5 hover:scale-105 duration-150" onmouseover="colourchanger('proj1')" onmouseout="backtonormal('proj1')"><a href="https://github.com/apoorvsrivastava270/stupaid.github.io" target="_blank"><img src="/media/stupaid.png" alt="stupaid" class="w-full"></a><span class="proj1 duration-200">Stupaid</span><br>A Neo-banking Startup founded by my Batchmate.</div>
+                            <div class="elem w-2/3 py-5 hover:scale-105 duration-150" onmouseover="colourchanger('proj2')" onmouseout="backtonormal('proj2')"><a href="https://github.com/apoorvsrivastava270/brute.github.io" target="_blank"><img src="/media/brute.png" alt="brute" class="w-full"></a><span class="proj2 duration-200">Brute</span><br>An e-Commerce website for sports products.</div>
+                        </div>
+                        <div class="bottomrow flex flex-col justify-center items-center">
+                            <div class="elem w-2/3 py-5 hover:scale-105 duration-150" onmouseover="colourchanger('proj3')" onmouseout="backtonormal('proj3')"><a href="https://github.com/apoorvsrivastava270/salt.github.io" target="_blank"><img src="/media/salt.png" alt="salt" class="w-full"></a><span class="proj3 duration-200">Salt (Clone)</span><br>A clone of the website Salt.pe</div>
+                            <div class="elem w-2/3 py-5 hover:scale-105 duration-150" onmouseover="colourchanger('proj4')" onmouseout="backtonormal('proj4')"><a href="https://github.com/apoorvsrivastava270/blazinpizzas.github.io" target="_blank"><img src="/media/blazinpizzas.png" alt="blazinpizzas" class="w-full"></a><span class="proj4 duration-200">Blazin Pizzas</span><br>A multi-pizza ordering and comparing website.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="section4 flex flex-col justify-center items-center w-full text-gray-900 bg-slate-50">
+            <div class="font-Cinzel text-6xl font-semibold py-4 text-center 2xl:text-left">
+                Contact Me
+            </div>
+            <div class="form h-fit w-full">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdp2s-pL__U_7xKIhseckD5GJwWX0iQjgNwbjTF7vGAoVizMw/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+    </div>
+    <div class="footer font-Poiret flex justify-center items-center flex-col">
+        <div class="leftlame p-5 flex flex-col w-full lg:text-base text-xl lg:flex-row justify-center items-center">
+            <div class="elemf px-5 hover:scale-105 hover:text-cyan-400 duration-150 cursor-pointer py-2"><a href="#top">Portfolio</a></div>
+            <div class="elemf px-5 hover:scale-105 hover:text-cyan-400 duration-150 cursor-pointer py-2"><a href="#about">About</a></div>
+            <div class="elemf px-5 hover:scale-105 hover:text-cyan-400 duration-150 cursor-pointer py-2"><a href="#skills">Skills</a></div>
+            <div class="elemf px-5 hover:scale-105 hover:text-cyan-400 duration-150 cursor-pointer py-2"><a href="#contact">Contact</a></div>
+        </div>
+        <div class="copy">
+            Copyright © Apoorv Srivastava 2022
+        </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
