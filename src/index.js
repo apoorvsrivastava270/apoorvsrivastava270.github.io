@@ -5,6 +5,7 @@ function colourchanger(str) {
         }
         else{
             document.getElementsByClassName(str).item(index).classList.add("text-cyan-400");
+            // document.getElementsByClassName(str).item(index).classList.add("2xl:text-cyan-400");
         }
     }
         

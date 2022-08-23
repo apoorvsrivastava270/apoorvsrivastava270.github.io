@@ -1082,6 +1082,16 @@ video {
   .\32xl\:text-left{
     text-align: left;
   }
+
+  .\32xl\:text-cyan-400{
+    --tw-text-opacity: 1;
+    color: rgb(34 211 238 / var(--tw-text-opacity));
+  }
+
+  .\32xl\:text-slate-50{
+    --tw-text-opacity: 1;
+    color: rgb(248 250 252 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 811px){
